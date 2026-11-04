@@ -1,4 +1,12 @@
+// const path = require("path");
+
+// require("dotenv").config({
+//     path: path.join(__dirname, ".env")
+// });
+
+// console.log("JWT_SECRET loaded:", Boolean(process.env.JWT_SECRET));
 require("dotenv").config();
+console.log("JWT_SECRET loaded:", !!process.env.JWT_SECRET);
 
 const express = require("express");
 const mongoose = require("mongoose");
