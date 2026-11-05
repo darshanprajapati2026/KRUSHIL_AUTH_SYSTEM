@@ -15,13 +15,7 @@ const cors = require("cors");
 const app = express();
 
 // Middleware
-// app.use(cors());
-app.use(cors({
-    origin: [
-        "https://krushilwebservices.in",
-        "https://www.krushilwebservices.in"
-    ]
-}));
+app.use(cors());
 app.use(express.json());
 
 // Authentication routes
