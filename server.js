@@ -28,6 +28,7 @@ app.use(express.json());
 
 // Authentication routes
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/admin", require("./routes/adminRoutes"));
 
 // Home route
 app.get("/", (req, res) => {
